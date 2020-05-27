@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Hack,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
@@ -14,16 +20,10 @@ body {
   background-color: #007bff;
 }
 
-.active {
-  /* background-color: #dbebfb; 
-  border-radius: 50px; */
-  color: #dbebfb;
-  /* box-shadow: 0px 0px 50px #007bff; */
-}
 
 .glow {
   /* font-size: 80px; */
-  /* color: #dbebfb; */
+  color: #fff; 
   /* text-align: center; */
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -32,15 +32,13 @@ body {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2983fe, 0 0 40px #2983fe, 0 0 50px #2983fe, 0 0 60px #2983fe, 0 0 70px #2983fe;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007bff, 0 0 40px #007bff, 0 0 50px #007bff, 0 0 60px #007bff, 0 0 70px #007bff;
   }
   
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #2983fe, 0 0 40px #2983fe, 0 0 50px #2983fe, 0 0 60px #2983fe, 0 0 70px #2983fe, 0 0 80px #2983fe;
+    text-shadow: 0 0 20px #fff, 0 0 30px #007bff, 0 0 40px #007bff, 0 0 50px #007bff, 0 0 60px #007bff, 0 0 70px #007bff, 0 0 80px #007bff;
   }
 }
-
-
 
 .header {
   margin-top: 20vh;
@@ -64,88 +62,29 @@ body {
   object-fit: cover;
 } 
 
-/* ********* NEON BUTTON ********** */
 
-.neon-btn {
-  margin-top:100px;
-  position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  color: #2196f3;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  text-decoration: none;
-  font-size: 30px;
-  overflow: hidden;
-  transition: 0.2s;
-  border: #2196f3 solid thin;
+/* Default item color */
+.navbar-dark .navbar-nav .nav-link {
+  /*color: red;*/
+  /*color: #32334a;*/
+  color: #007bff;
 }
 
-.neon-btn:hover {
-  color: #32334a;
-  background: #2196f3;
-  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-  text-decoration: none;
-  transition-delay: 1s;
+/* The hover color for navbar item */
+.navbar-dark .navbar-nav .nav-link:focus, 
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:active {
+  /*color: #475297;*/
+  color: #798aeb;
+  /*color: #ccc !important;*/
 }
 
-.neon-btn span {
-  position:absolute;
-  display: block;
+/* The active item color  */
+.navbar-dark .navbar-nav .active>.nav-link, 
+.navbar-dark .navbar-nav .nav-link.active, 
+.navbar-dark .navbar-nav .nav-link.show, 
+.navbar-dark .navbar-nav .show>.nav-link {
+  /*color: #714cdf;*/
+  color: #ffffff;
 }
 
-/* top */
-.neon-btn span:nth-child(1){
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #2196f3);
-}
-
-.neon-btn:hover span:nth-child(1){
-  left: 100%;
-  transition: 1s;
-}
-/* bottom */
-.neon-btn span:nth-child(3){
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, #2196f3);
-}
-
-.neon-btn:hover span:nth-child(3){
-  right: 100%;
-  transition: 1s;
-  transition-delay: 0.5s;
-}
-/* right */
-a span:nth-child(2){
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #2196f3);
-}
-
-.neon-btn:hover span:nth-child(2){
-  top: 100%;
-  transition: 1s;
-  transition-delay: 0.25s;
-}
-/* left */
-.neon-btn span:nth-child(4){
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #2196f3);
-}
-
-.neon-btn:hover span:nth-child(4){
-  bottom:100%;
-  transition: 1s;
-  transition-delay: 0.75s;
-}
