@@ -40,6 +40,27 @@ body {
   }
 }
 
+/* mini - glow */
+.glow-mini {
+  /* font-size: 80px; */
+  color: #fff; 
+  /* text-align: center; */
+  -webkit-animation: glow-mini 1s ease-in-out infinite alternate;
+  -moz-animation: glow-mini 1s ease-in-out infinite alternate;
+  animation: glow-mini 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow-mini {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #007bff, 0 0 10px #007bff, 0 0 12px #007bff, 0 0 15px #007bff, 0 0 17px #007bff;
+  }
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 7px #007bff, 0 0 10px #007bff, 0 0 12px #007bff, 0 0 15px #007bff, 0 0 17px #007bff, 0 0 20px #007bff;
+  }
+}
+
+
 .header {
   margin-top: 20vh;
 }
