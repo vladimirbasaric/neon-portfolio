@@ -100,9 +100,8 @@ body {
 
 .portret {  
   border: solid thin  #007bff;
-  opacity: 0.9;
   box-shadow: 0px 0px 15px #007bff;
-
+  width: 17rem;
 }
 
 .composition-photo{  
@@ -123,4 +122,8 @@ body {
 
 footer li {
   list-style: none;
+}
+
+.hal {
+  margin-top: 7rem;
 }
