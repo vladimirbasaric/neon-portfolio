@@ -65,7 +65,7 @@ body {
   margin-top: 20vh;
 }
 
-.bg-video {
+.bg-video-home {
   position: absolute;
   top: 0;
   left: 0;
@@ -73,6 +73,18 @@ body {
   width: 100%;
   z-index: -1;
   opacity: .15;
+  overflow: hidden;
+  object-fit: fill;
+} 
+
+.bg-video-projects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .25;
   overflow: hidden;
   object-fit: fill;
 } 
@@ -88,6 +100,22 @@ body {
   margin-top: 20vh;
   margin-bottom: 10vh;
   padding-top: 6rem;  
+}
+
+#projects-main {
+  /* top | right | bottom | left */
+  margin: -7rem auto 5rem auto;
+}
+
+.footer {
+  padding-top: .35rem;
+  padding-bottom: .35rem;
+  border-top:#007bff 2px solid;
+  background: rgba(0,0,0,0.8);
+}
+
+footer li {
+  list-style: none;
 }
 
 .web-tech {
@@ -114,17 +142,12 @@ body {
   transform: scale(1.05) translateY(-.5rem);
 }
 
-.footer {
-  padding-top: .35rem;
-  padding-bottom: .35rem;
-  border-top:#007bff 2px solid;
-  background: rgba(0,0,0,0.8);
-}
-
-footer li {
-  list-style: none;
-}
-
 .hal {
   margin-top: 7rem;
+}
+
+
+/* this fix footer to bottom of page */
+.footer-calc-fix{
+  min-height: calc(100vh - 195px);
 }

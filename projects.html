@@ -21,126 +21,129 @@
     
   </head>
   <body>
-    <nav id="navigation" class="navbar fixed-top navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#">
-        <div class="container-fluid navbar-container">
-          <img class="logo" src="images/logo.png" alt="navbar-logo">
+    <div class="footer-calc-fix">
+      <nav id="navigation" class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+          <div class="container-fluid navbar-container">
+            <img class="logo" src="images/logo.png" alt="navbar-logo">
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto">
+            <!-- Home -->
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="index.html">
+                <i class="fas fa-home mr-1"></i>Home
+              </a>
+            </li>
+            <!-- Projects -->
+            <li class=" active glow nav-item mx-4">
+              <a class="nav-link" href="projects.html">
+                <i class="fas fa-cogs mr-1"></i>Projects
+              </a>
+            </li>
+            <!-- Contact -->
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="#!">
+                <i class="fas fa-mobile-alt mr-1"></i>Contact
+              </a>
+            </li>
+          </ul>
+  
+          <ul class="nav navbar-nav ml-auto">
+            <!-- <li class="divider"></li> -->       
+            <li class="nav-item mx-4">
+              <a target="_blank" href="https://www.github.com/vladimirbasaric" class="nav-link">
+                <i class="fab fa-lg fa-github mr-1"></i>
+                <!-- <span class="d-inline d-inline d-sm-inline d-md-inline d-lg-none">Github</span> -->
+              </a>
+            </li>                    
+          </ul>     
         </div>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-     
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto">
-          <!-- Home -->
-          <li class="nav-item mx-4">
-            <a class="nav-link" href="index.html">
-              <i class="fas fa-home mr-1"></i>Home
-            </a>
-          </li>
-          <!-- Projects -->
-          <li class=" active glow nav-item mx-4">
-            <a class="nav-link" href="projects.html">
-              <i class="fas fa-cogs mr-1"></i>Projects
-            </a>
-          </li>
-          <!-- Contact -->
-          <li class="nav-item mx-4">
-            <a class="nav-link" href="#!">
-              <i class="fas fa-mobile-alt mr-1"></i>Contact
-            </a>
-          </li>
-        </ul>
+      </nav>
 
-        <ul class="nav navbar-nav ml-auto">
-          <!-- <li class="divider"></li> -->       
-          <li class="nav-item mx-4">
-            <a target="_blank" href="https://www.github.com/vladimirbasaric" class="nav-link">
-              <i class="fab fa-lg fa-github mr-1"></i>
-              <!-- <span class="d-inline d-inline d-sm-inline d-md-inline d-lg-none">Github</span> -->
-            </a>
-          </li>                    
-        </ul>     
+      <div class="hal">
+        <span class="hal-9000 d-block mx-auto"></span>
       </div>
-    </nav>
-    <div class="hal">
-      <span class="hal-9000 d-block mx-auto"></span>
+  
+      <header class="header container">
+  
+        <!-- background video -->
+        <div class="bg-video-projects">
+          <video class="bg-video-projects content" autoplay muted loop>
+              <source src="images/space-odyssey.webm" type="video/mp4">
+              <source src="images/space-odyssey.webm" type="video/webm">
+              Your browser is not suported!
+          </video>
+        </div>
+      </header>
+  
+      <main id="projects-main" class="container-fluid">  
+        <div class="row text-center">
+          <!-- first card -->
+          <div class="col-xs-12 col-md-6 col-xl-3">
+            <div class="card">
+              <img class="card-img-top" src="images/truck.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Transport App</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  demo
+                </button>
+                <a href="#!" class="btn btn-info">github</a>
+              </div>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="col-xs-12 col-md-6 col-xl-3">
+            <div class="card">
+              <img class="card-img-top" src="images/truck.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Transport App</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <a href="#!" class="btn btn-info">Demo</a>
+                <a href="#!" class="btn btn-info">github</a>
+              </div>
+            </div>
+          </div>
+          <!-- third card -->
+          <div class="col-xs-12 col-md-6 col-xl-3">
+            <div class="card">
+              <img class="card-img-top" src="images/truck.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Transport App</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <a href="#!" class="btn btn-info">Demo</a>
+                <a href="#!" class="btn btn-info">github</a>
+              </div>
+            </div>
+          </div>
+          <!-- fourth card -->
+          <div class="col-xs-12 col-md-6 col-xl-3">
+            <div class="card">
+              <img class="card-img-top" src="images/truck.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Transport App</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <a href="#!" class="btn btn-info">Demo</a>
+                <a href="#!" class="btn btn-info">github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main> 
     </div>
-
-    <header class="header container">
-
-      <!-- background video -->
-      <div class="bg-video">
-        <video class="bg-video content" autoplay muted loop>
-            <source src="images/space-odyssey.webm" type="video/mp4">
-            <source src="images/space-odyssey.webm" type="video/webm">
-            Your browser is not suported!
-        </video>
-      </div>
-    </header>
-
-    <main id="main" class="container">  
-      <div class="row text-center">
-        <!-- first card -->
-        <div class="col-xs-12 col-sm-6">
-          <div class="card">
-            <img class="card-img-top" src="images/truck.jpeg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Transport App</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                demo
-              </button>
-              <a href="#!" class="btn btn-info">github</a>
-            </div>
-          </div>
-        </div>
-        <!-- second card -->
-        <div class="col-xs-12 col-sm-6">
-          <div class="card">
-            <img class="card-img-top" src="images/truck.jpeg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Transport App</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#!" class="btn btn-info">Demo</a>
-              <a href="#!" class="btn btn-info">github</a>
-            </div>
-          </div>
-        </div>
-        <!-- third card -->
-        <div class="col-xs-12 col-sm-6">
-          <div class="card">
-            <img class="card-img-top" src="images/truck.jpeg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Transport App</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#!" class="btn btn-info">Demo</a>
-              <a href="#!" class="btn btn-info">github</a>
-            </div>
-          </div>
-        </div>
-        <!-- fourth card -->
-        <div class="col-xs-12 col-sm-6">
-          <div class="card">
-            <img class="card-img-top" src="images/truck.jpeg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Transport App</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#!" class="btn btn-info">Demo</a>
-              <a href="#!" class="btn btn-info">github</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
 
     <footer class="footer container-fluid text-center">
       <div class="row">
@@ -178,6 +181,7 @@
         </div>
       </div>
     </footer>
+    
 
   <!-- First Project Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
