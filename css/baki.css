@@ -115,7 +115,8 @@ body {
 }
 
 .footer {
-  padding: .7rem;
+  padding-top: .35rem;
+  padding-bottom: .35rem;
   border-top:#007bff 2px solid;
   background: rgba(0,0,0,0.8);
 }
