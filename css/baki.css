@@ -91,7 +91,7 @@ body {
 }
 
 .web-tech {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .about-section {
@@ -99,8 +99,8 @@ body {
 }
 
 .portret {  
-  border: solid thin  #007bff;
-  box-shadow: 0px 0px 15px #007bff;
+  border: solid thin  #17b06b;
+  box-shadow: 0px 0px 15px #17b06b;
   width: 17rem;
 }
 
@@ -115,7 +115,7 @@ body {
 }
 
 .footer {
-  padding: 1rem;
+  padding: .7rem;
   border-top:#007bff 2px solid;
   background: rgba(0,0,0,0.8);
 }
