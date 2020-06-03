@@ -148,6 +148,10 @@ footer li {
 
 
 /* this fix footer to bottom of page */
-.footer-calc-fix{
+.footer-projects-fix{
   min-height: calc(100vh - 195px);
+}
+
+.footer-contact-fix{
+  min-height: calc(100vh - 262px);
 }
