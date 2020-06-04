@@ -74,10 +74,7 @@
         </div>
       </nav>
 
-     
-  
       <header class="header container">
-  
         <!-- background video -->
         <div class="bg-video-projects">
           <video class="bg-video-projects content" autoplay muted loop>
@@ -86,12 +83,32 @@
               Your browser is not suported!
           </video>
         </div>
+
+        <form action="">
+          <div class="row text-center">
+            <div class="col-lg-6 mx-auto">
+                <form name="contact" method="POST" data-netlify="true">
+                    <div class="form-group">
+                        <input type="text" class="form-control text-center" id="name" aria-describedby="name"
+                               placeholder="Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" class="form-control text-center" id="email" aria-describedby="Email"
+                               placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control text-center" id="text" placeholder="Your message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Send</button>
+                </form>
+            </div>
+        </div>
+        </form>
       </header>
-  
-     
     </div>
 
-    <footer class="footer container-fluid text-center">
+    <footer class="footer container-fluid text-center fixed-bottom">
       <div class="row">
         <div class="col-md-4 col-sm-12 my-auto pb-1">             
           <div class="row">

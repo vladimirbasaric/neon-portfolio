@@ -152,6 +152,11 @@ footer li {
   min-height: calc(100vh - 195px);
 }
 
-.footer-contact-fix{
-  min-height: calc(100vh - 262px);
+/* .footer-contact-fix{
+  min-height: calc(100vh - 250px);
+} */
+
+form {
+  opacity: 0.6;
+  padding-top: 10rem;
 }
