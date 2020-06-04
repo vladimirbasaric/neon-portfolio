@@ -10,3 +10,10 @@
   margin: auto;
   padding-top: 1rem;
 } 
+
+.modal-footer,
+.modal-header  {
+  border: none;
+}
+
+
