@@ -59,12 +59,11 @@ body {
   }
 }
 
-
 .header {
-  margin-top: 20vh;
+  margin-top: 25vh;
 }
 
-.bg-video-home {
+.bg-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -72,18 +71,6 @@ body {
   width: 100%;
   z-index: -1;
   opacity: .4;
-  overflow: hidden;
-  object-fit: fill;
-} 
-
-.bg-video-projects {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: .25;
   overflow: hidden;
   object-fit: fill;
 } 
@@ -159,3 +146,4 @@ form {
   opacity: 0.6;
   padding-top: 10vh;
 }
+
