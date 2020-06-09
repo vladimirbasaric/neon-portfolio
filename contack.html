@@ -114,11 +114,18 @@
               </div>
               <!-- FIle upload -->
               <div class="form-group">
-                <input class="form-control-file" 
+                <!-- <input class="form-control-file" 
                         type="file"
                         id="file-upload" 
                         placeholder="Upload File" 
-                        name="file-upload">
+                        name="file-upload"> -->
+                        <label class="btn btn-dark" for="my-file-selector">
+                          <input id="my-file-selector" type="file" style="display:none" 
+                          onchange="$('#upload-file-info').html(this.files[0].name)">
+                          <i class="fas fa-upload"></i>
+                          Upload file
+                      </label>
+                      <span class='label label-info' id="upload-file-info"></span>
               </div>
 
               <button type="submit" class="btn btn-info btn-wide">Send</button>
