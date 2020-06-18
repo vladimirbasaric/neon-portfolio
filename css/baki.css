@@ -59,6 +59,11 @@ body {
   }
 }
 
+.header-home {
+  margin-top: 25vh;
+  min-height: 73vh;
+}
+
 .header {
   margin-top: 25vh;
 }
@@ -82,10 +87,7 @@ body {
 } 
 
 #main {
-  /* border-top:#007bff 2px solid; */
-  margin-top: 20vh;
   margin-bottom: 10vh;
-  padding-top: 6rem;  
 }
 
 #projects-main {
